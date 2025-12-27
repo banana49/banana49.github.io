@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: #1a1a1a;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #888;
+    font-weight: 300;
+}
+
+/* Hero Section */
+.hero {
+    padding: 80px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+}
+
+.hero h2 {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.lead {
+    font-size: 20px;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 16px 32px;
+    background: #1a1a1a;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.cta-button:hover {
+    background: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Features Section */
+.features {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 60px;
+    color: #1a1a1a;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    padding: 30px;
+    background: #fafafa;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    border-color: #d0d0d0;
+}
+
+.feature-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.feature-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+}
+
+.feature-card p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* How It Works */
+.how-it-works {
+    padding: 80px 0;
+    background: #fafafa;
+}
+
+.how-it-works h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 60px;
+    color: #1a1a1a;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.step {
+    text-align: center;
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background: #1a1a1a;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 auto 20px;
+}
+
+.step h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+}
+
+.step p {
+    color: #666;
+    font-size: 15px;
+}
+
+/* Screenshots */
+.screenshots {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.screenshot-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.screenshot-item {
+    background: #fafafa;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.screenshot-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    border-color: #d0d0d0;
+}
+
+.screenshot-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    background: #ffffff;
+    max-height: 400px;
+    object-position: top;
+}
+
+.screenshot-item p {
+    padding: 16px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin: 0;
+    background: #ffffff;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Install Section */
+.install {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+    color: white;
+    text-align: center;
+}
+
+.install h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.install p {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.install .cta-button {
+    background: white;
+    color: #1a1a1a;
+}
+
+.install .cta-button:hover {
+    background: #f5f5f5;
+}
+
+/* Footer */
+footer {
+    background: #1a1a1a;
+    color: #888;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-links {
+    margin-top: 16px;
+}
+
+.footer-links a {
+    color: #888;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 36px;
+    }
+    
+    .hero h2 {
+        font-size: 32px;
+    }
+    
+    .lead {
+        font-size: 18px;
+    }
+    
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .steps {
+        grid-template-columns: 1fr;
+    }
+    
+    .screenshot-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
